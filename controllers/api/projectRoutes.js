@@ -15,6 +15,26 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+// PUT route to update a project
+router.put('/:id', async (req, res) => {
+  try {
+    const updatedProject = await Project.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+
+    if (!updatedProject[0]) {
+      res.status(404).json({ message: 'No project found with this id' });
+      return;
+    }
+
+    res.status(200).json({ message: 'Project updated successfully' });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const projectData = await Project.destroy({
