@@ -1,14 +1,24 @@
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
-  <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
+<div class="recipe body">
+  <div class="recipe header">
+    <h2>Edit Recipe</h2>
+  </div>
+  <form id="edit-recipe-form" class="card-body">
+   <input type="hidden" name="post-id" value="{{post.id}}" />
+   <label class="recipe-name" for="project-name">Name</label>
+   <input type="text" name='title' value='{{name}}'>
+   <label class="recipe-funding" for="project-funding">ingredients</label>
+   <input type="text" name='description' value='{{{post.ingredients}}}'>
+   <label class="recipe-desc" for="project-desc">Description</label>
+   <input type="text" name='description'>{{post.description}}</textarea>
+  
+    <span for="img" aria-label="money">⏰</span>
+    <span class="dollar-amount">{{format_amount needed_funding description}}</span>
     needed
   </p>
   <p>
-    <button class="btn btn-primary">Update/Fund this Project!</button>
+    <button type="submit" class="btn">Update Recipe!</button>
+    <button type="button" id="delete-button">delete</button>
   </p>
+  </form>
 </div>
+<script src='/js/project.js'></script>
