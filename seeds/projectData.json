@@ -1,17 +1,18 @@
 [
   {
-    "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
+    "name": "FreshEats Community",
+    "description": "A platform connecting local communities to share surplus homegrown produce and reduce food waste.",
+    "needed_funding": 6000
   },
   {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+    "name": "Meal Matchmakers",
+    "description": "An app that pairs individuals with excess cooked meals to those in need within their vicinity.",
+    "needed_funding": 8500
   },
   {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+    "name": "Harvest Helper",
+    "description": "A system aiding farmers in distributing excess crops directly to local residents to ensure food sustainability.",
+    "needed_funding": 12000
   }
 ]
+

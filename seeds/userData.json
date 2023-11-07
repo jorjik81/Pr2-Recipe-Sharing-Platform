@@ -1,17 +1,17 @@
 [
   {
-    "name": "Sal",
-    "email": "sal@hotmail.com",
-    "password": "password12345"
+    "name": "Oliver Parker",
+    "email": "oliver.parker@gmail.com",
+    "password": "OliverPwd!23"
   },
   {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
-    "password": "password12345"
+    "name": "Sophia Adams",
+    "email": "sophia.adams@gmail.com",
+    "password": "SophiaPwd!456"
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
-    "password": "password12345"
+    "name": "Elijah Wright",
+    "email": "elijah.wright@gmail.com",
+    "password": "ElijahPwd!789"
   }
 ]

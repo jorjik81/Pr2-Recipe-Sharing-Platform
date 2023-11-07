@@ -1,14 +1,13 @@
 <div class="text-center">
   <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
+  <p>🍕</p> <!-- Changed to pizza emoji -->
   <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <p>Shared by {{user.name}} on {{format_date date_shared}}</p>
   <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed
+    <span for="img" aria-label="food">🍕</span> <!-- Changed to pizza emoji -->
+    <span class="food-quantity">{{food_quantity}} available</span>
   </p>
   <p>
-    <button class="btn btn-primary">Fund this Project!</button>
+    <button class="btn btn-primary">Support This Initiative!</button>
   </p>
 </div>

@@ -1,23 +1,21 @@
-<!-- Loop over each object in the projects array -->
-{{#each projects as |project| }}
+{{#each foodItems as |foodItem| }}
 <div class="row mb-4 project">
   <div class="col-md-5">
     <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/project/{{project.id}}">{{project.name}}</a>
+      <!-- Display food item details -->
+      <a href="/fooditem/{{foodItem.id}}">{{foodItem.name}}</a>
     </h2>
     <p>
-      <span for="img" aria-label="money">💲</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
+      <!-- You can represent different food icons or emojis -->
+      <span aria-label="food-emoji">🥕</span>
+      <!-- Display quantity or any relevant details -->
+      <span class="quantity">{{foodItem.quantity}} available</span>
     </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+    <p>Shared by {{foodItem.user.name}} on {{format_date foodItem.date_shared}}</p>
   </div>
   <div class="col-md-7">
     <p>
-      {{project.description}}
+      {{foodItem.description}}
     </p>
   </div>
 </div>
