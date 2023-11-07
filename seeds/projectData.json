@@ -2,16 +2,16 @@
   {
     "name": "J Blend ",
     "description": "Blended vegetables ",
-    "needed_funding": 5
+    "needed_ingredients": "vegs"
   },
   {
     "name": "The meat",
     "description": "Meats",
-    "needed_funding": 1
+    "needed_ingredients": "eggs"
   },
   {
     "name": "Roll",
     "description": "Roll it, eat it!",
-    "needed_funding": 8
+    "needed_ingredients": "junk"
   }
 ]

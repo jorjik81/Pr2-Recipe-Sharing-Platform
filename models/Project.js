@@ -17,14 +17,15 @@ Project.init(
     },
     description: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
-      type: DataTypes.FLOAT,
+    needed_ingredients: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
     user_id: {
@@ -45,3 +46,5 @@ Project.init(
 );
 
 module.exports = Project;
+
+
