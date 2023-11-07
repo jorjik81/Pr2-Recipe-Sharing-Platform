@@ -1,6 +1,21 @@
+<link rel="stylesheet" href="/public/css/styles.css">
 <div class="row">
   <div class="col-auto">
     <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+<div class="columns">
+  <div class="favorite" class="is-flex is-flex-direction-column is-justify-content-center">
+    First column
+  </div>
+  <div class="is-flex is-flex-direction-column">
+    Second column
+  </div>
+  <div class="is-flex is-flex-direction-column">
+    Third column
+  </div>
+  <div class="is-flex is-flex-direction-column">
+    Fourth column
   </div>
 </div>
 
@@ -10,21 +25,22 @@
 
     <form class="form new-project-form">
       <div class="form-group">
-        <label for="project-name">Recipe name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="recipe-name">Recipe name:</label>
+        <input class="form-input" type="text" id="recipe-name" name="recipe-name" />
       </div>
       <div class="form-group">
-        <label for="project-funding">Ingredients:</label>
-        <input class="form-input" type="text" id="project-funding" name="project-funding" />
+        <label for="recipe-ingredients">Ingredients:</label>
+        <input class="form-input" type="text" id="recipe-ingredients" name="recipe-ingredients" />
       </div>
       <div class="form-group">
-        <label for="project-desc">Directions:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <label for="recipe-desc">Description:</label>
+        <textarea class="form-input" id="recipe-desc" name="recipe-desc"></textarea>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create/Update</button>
+        <button type="submit" class="btn btn-primary">Create</button>
       </div>
     </form>
+    
   </div>
 
   {{#if projects.length}}
@@ -34,7 +50,7 @@
     {{#each projects as |project|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+        <h4><a href="/project/{{id}}">{{project.name}}</a></h4>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>

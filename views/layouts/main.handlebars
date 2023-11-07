@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fund My Project!</title>
+  <title>Share Your Recipe!</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
+ <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css">
 </head>
 
 <body>
@@ -29,6 +30,9 @@
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
+      <div class="background-container" style="background-image: url('{{photoUrl}}');">
+  
+</div>
     </main>
     <footer>
       
@@ -39,6 +43,21 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
+ // <script>const accessKey = '44HB8VqcHU8ndhutt7KDNIeAxC26mElck4ZYMpvzXmc';
+const url = `https://api.unsplash.com/photos/random?client_id=${accessKey}`;
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    // Extract the photo URL from the response data
+    const photoUrl = data.urls.full;
+
+    // Set the photo as the background of your app or specific elements
+    document.body.style.backgroundImage = `url(${photoUrl})`;
+  })
+  .catch((error) => {
+    console.error('Error fetching photo:', error);
+  });</script>
 </body>
 
 </html>

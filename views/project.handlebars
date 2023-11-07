@@ -3,22 +3,17 @@
     <h2>Edit Recipe</h2>
   </div>
   <form id="edit-recipe-form" class="card-body">
-   <input type="hidden" name="post-id" value="{{post.id}}" />
-   <label class="recipe-name" for="project-name">Name</label>
-   <input type="text" name='title' value='{{name}}'>
-   <label class="recipe-funding" for="project-funding">ingredients</label>
-   <input type="text" name='description' value='{{{post.ingredients}}}'>
-   <label class="recipe-desc" for="project-desc">Description</label>
-   <input type="text" name='description'>{{post.description}}</textarea>
-  
-    <span for="img" aria-label="money">⏰</span>
-    <span class="dollar-amount">{{format_amount needed_funding description}}</span>
-    needed
-  </p>
-  <p>
-    <button type="submit" class="btn">Update Recipe!</button>
-    <button type="button" id="delete-button">delete</button>
-  </p>
+    <input type="hidden" name="recipe-id" value="{{post.id}}"/>
+    <label class="recipe-name" for="recipe-name">Name</label>
+    <input type="text" id="recipe-name" name='name' value='{{name}}'>
+    <label class="recipe-ingredients" for="recipe-ingredients">Ingredients</label>
+    <input type="text" id="recipe-ingredients" name='ingredients' value='{{post.ingredients}}'>
+    <label class="recipe-desc" for="recipe-desc">Description</label>
+    <input type="text" id="recipe-desc" name='description' value= '{{post.description}}'>
+
+    <p>
+      <button type="submit" class="btn">Update Recipe!</button>
+    </p>
   </form>
 </div>
 <script src='/js/project.js'></script>
