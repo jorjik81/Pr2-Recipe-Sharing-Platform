@@ -15,14 +15,18 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-// PUT route to update a project
 router.put('/:id', async (req, res) => {
   try {
-    const updatedProject = await Project.update(req.body, {
-      where: {
-        id: req.params.id,
-      },
-    });
+    const { title, body } = req.body;
+
+    const updatedProject = await Project.update(
+      { title, body },
+      {
+        where: {
+          id: req.params.id,
+        },
+      }
+    );
 
     if (!updatedProject[0]) {
       res.status(404).json({ message: 'No project found with this id' });
