@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 3.15;
+  line-height: 2.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -904,15 +904,15 @@ a:hover {
 }
 
 .text-white {
-  color: #ffffff !important;
+  color: #f3f1f1 !important;
 }
 
 .text-black {
-  color: #000000 !important;
+  color: #e7d9d9 !important;
 }
 
 .text-link {
-  color: #1b89bc !important;
+  color: #0b7fb4 !important;
 }
 
 /* BACKGROUND UTILS */
@@ -945,7 +945,7 @@ a:hover {
 }
 
 .bg-link {
-  background-color: #1b89bc !important;
+  background-color: #0c4b68 !important;
 }
 
 /* DISPLAY */
@@ -975,7 +975,7 @@ a:hover {
   padding: 0.5rem 1.2rem;
   margin: 0;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 2rem;
   border-radius: 0.3rem;
   border: 1px solid transparent;
   outline: none;
@@ -1009,8 +1009,8 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
-  color: #d9e9e8;
+  background-color: #1a3f67;
+  color: #f0f6f5;
 }
 
 .btn.btn-primary:hover {
@@ -1096,7 +1096,7 @@ a:hover {
 }
 
 .card .card-footer {
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid #8b2626;
   padding: 0.375rem;
 }
 
@@ -1142,7 +1142,7 @@ form .form-label {
 form .form-input {
   width: 100%;
   padding: 0.75rem;
-  color: #1a1a1a;
+  color: #240707;
   background-color: #ffffff;
   margin: 0.625rem 0;
   font-size: 1.2rem;
