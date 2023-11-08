@@ -3,18 +3,19 @@
   <div class="col-auto">
     <h2>Welcome, {{name}}!</h2>
   </div>
+</div>
 <div class="columns">
-  <div class="column is-3">
-    <img src="./assets/photoone.jpg" alt="Image1">
-    First column content 
+  <div class="favorite" class="is-flex is-flex-direction-column is-justify-content-center">
+    First column
   </div>
-  <div class="column is-3">
-    <img src="./assets/phototwo.jpg" alt="Image2">
-    Second column content 
+  <div class="is-flex is-flex-direction-column">
+    Second column
   </div>
-  <div class="column is-3">
-    <img src="./assets/photothree.jpg" alt="Image3">
-    Third column content 
+  <div class="is-flex is-flex-direction-column">
+    Third column
+  </div>
+  <div class="is-flex is-flex-direction-column">
+    Fourth column
   </div>
 </div>
 
@@ -25,11 +26,11 @@
     <form class="form new-project-form">
       <div class="form-group">
         <label for="recipe-name">Recipe name:</label>
-        <textarea class="form-input"  id="recipe-name" name="recipe-name"></textarea>
+        <input class="form-input" type="text" id="recipe-name" name="recipe-name" />
       </div>
       <div class="form-group">
         <label for="recipe-ingredients">Ingredients:</label>
-        <textarea class="form-input"  id="recipe-ingredients" name="recipe-ingredients"></textarea> 
+        <input class="form-input" type="text" id="recipe-ingredients" name="recipe-ingredients" />
       </div>
       <div class="form-group">
         <label for="recipe-desc">Description:</label>
